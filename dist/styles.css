@@ -1,0 +1,735 @@
+body{
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font:15px/1.5;
+}
+
+
+/*global fstyle...*/
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*others*/
+.main_nav{
+  width: 100%;
+  background: #00316b;
+}
+.main_nav ul{
+  width: 80%;
+  margin: 0 auto;
+  padding: auto;
+}
+.main_nav ul li{
+  display:inline-block;
+  list-style: none;
+  padding: 20px;
+}
+.main_nav ul li:hover{
+background-color: #e91e63;
+}
+.toggle{
+  width: 100%;
+  padding: 10px 20px;
+  background: #001f44;
+  text-align: right;
+  box-sizing: border-box;
+  color: #f1f1f1;
+  font-size: 30px;
+  display: none;
+}
+
+@media(max-width:768px){
+  .toggle{
+    display: block;
+  }
+ .main_nav ul{
+   width: 100%;
+   display: none;
+  }
+  .main_nav ul li{
+    display: block;
+    overflow: none;
+  }
+  .active{
+    display: block;
+  }
+}
+.overlay{
+    width: 0;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(109, 100, 100, 0);
+    background-color: rgba(58, 27, 27, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+}
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.verlay-content a{
+    text-decoration: none;
+ 
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #532424;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;}
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+        
+      }
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+    .btn img{
+        width: 45px;
+       margin-left: 0;
+       
+      
+    }
+    .login{
+      margin: 100px auto;
+    }
+    .register{
+      margin: 20px auto;
+    }
+    .col-wrap{
+      opacity: 0.3;
+      margin: 15px auto;
+    }
+    .form-control{
+      background: transparent !important;
+      color: #f4f4f4 !important;
+
+      font-size: 15px;
+      border: 1px solid #5d7575;
+    }
+    .showContent .form-control{
+      background: transparent !important;
+      color: #f4f4f4 !important;
+   
+      font-size: 15px;
+      border: 1px solid#10e7e7;
+    }
+    .showContent .btn{
+      background: #1f0304;
+    }
+    .showContent a{
+      color: #56dd9a;
+      text-decoration: none;
+    }
+    .navbar form{
+      border-radius: none;
+      background-color:transparent !important;
+      box-shadow:none;
+    }
+    .navbar{
+      width: 100%;
+    }
+  
+    .homePage{
+      height: 100vh;
+      position: relative;
+      text-align: center;
+    }
+    .homeContent{
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #726969;
+      padding: 20px;
+      opacity: 0.9;
+      color: #ecf1f3;
+      border-radius: 15px;
+    }
+    .homeContent a{
+      border-radius: 15px;
+    }
+    .images{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+   
+
+      
+    }
+    .images img{
+margin: 20px auto;
+width: 100%;
+     
+    }
+    .wrap{
+      background-image: url("images/landing.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      overflow: hidden;
+      }
+   .aboutFrys{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    flex-wrap: nowrap;
+   }
+   .error{
+     color: #f50a12;
+   }
+   .reserveNow{
+display: flex;
+align-content: center;
+background: rgb(228, 165, 48);
+justify-content: center;
+padding: 20px;
+height: 200px;
+
+   }
+   .reserveNow a{
+     color: #ecf3f3;
+     text-decoration: none;
+     text-transform: uppercase;
+   }
+   .aboutFrys a{
+     text-decoration: none;
+     color: #ffff;
+     background: #2c0202;
+     padding: 15px;
+     text-transform: uppercase;
+     font-weight: 600;
+     box-shadow: -2px 4px 3px 2px rgb(196, 160, 169);
+     width: 250px;
+     border-radius: 10px;
+   }
+   .aboutFrys a:hover{
+     background: #532424;
+     border-radius: 15px;
+     transition: 1s;
+   
+   }
+   .aboutFry .form-control{
+     width: 100%;
+   }
+   .reserve form{
+     background: #fbfcfc;
+     color: rgb(24, 4, 4);
+     margin: 10px auto;
+     width: 100%;
+     padding: 15px;
+     
+   }
+   .reserve .btn{
+    text-decoration: none;
+    color: #ffff;
+    background: #5f1010;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 14px;
+    margin-bottom: 5px;
+  }
+  .reserve form .form-control{
+    color: #02060c !important;
+    font-size: 17px;
+
+  }
+  .reserve  select{
+   padding: 11px;
+   width: 100%;
+   background: transparent;
+   color: rgb(31, 1, 1);
+   display: flex;
+   border: 1px solid #5d7575;
+  }
+
+  .reserve  textarea:focus{
+    border: none;
+
+  }
+  .reserve input[type=number]{
+    padding: 9px;
+   width: 100%;
+   background: transparent;
+   color: rgb(3, 0, 0);
+   border: 1px solid #5d7575;
+  }
+  
+  .reserve .btn:hover{
+    background: #532424;
+  }
+  .commisions{
+    background: #ffffff;
+    margin: 10px auto;
+  }
+  .commisions h1{
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium';
+  }
+  .commisions .premium .card{
+    background: #773030;
+    color: #fff;
+
+  }
+  .commisions .premium .card a{
+    background: #4b4747;
+  }
+  .card{
+    height: 100vh auto;
+    margin: 5px auto;
+  
+  }
+  .card ul li{
+    list-style: circle;
+  }
+  .card h2{
+    font-weight: 400;
+  }
+  .card h3{
+    font-weight: 900;
+    font-family: Impact;
+  }
+  .card p{
+    font-weight: 700;
+  }
+  .progres{
+    background: #022727;
+    margin: 100px auto;
+    height: 50vh auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #fff;
+    border-radius: 20px;
+    
+  }
+  .contactUs{
+    background: url("images/landing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+  }
+ 
+    .error{
+      color: rgb(138, 111, 111);
+    }
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+        }
+
+      }
+      @media screen and (max-width: 968px) {
+        .overlay-content{
+display: none;
+        }
+        }
+        *{
+          margin:0;
+          padding:0;
+        }
+        
+        body{
+          margin:0;
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size:15px;
+
+  
+          line-height:1.6;
+        }
+     
+        #showcase{
+          background-image:url('images/back.jpg');
+          background-size:cover;
+          background-position:center;
+          height:100vh;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          text-align:center;
+          padding:0 20px;
+          color: #ecf1f3;
+          z-index: -1;
+          width: 100%;
+        }
+        #showcase .showContent .text{
+          margin: 50px auto;
+        }
+        .dealers{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #0c0405;
+          margin: 15px auto;
+          color: #ffffff;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        .aboutFrys{
+        
+          color: rgb(14, 4, 4);
+        }
+        .apply{
+          background: #e26161;
+          text-align: center;
+          width: 250px !important;
+          color: #fff;
+          border-radius: 10px;
+          padding: 15px;
+        }
+        .apply h2{
+          font-family: sans-serif;
+          font-weight: 900;
+        } 
+        .apply a{
+          background: #1e1e1f;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 600;
+          padding: 10px;
+          font-family: sans-serif;
+          text-decoration: none;
+          width: 100%;
+        }
+        .apply .btn{
+          background: #022727;
+        }
+        .apply .btn:hover{
+          background: #220101;
+          color: #fff;
+          transition: 1s;
+          border-radius: 17px;
+        }
+        .apply p{
+          font-size: 17px;
+        }
+        .priceTag{
+          width: 350px;
+          height: 300px;
+          background: #dd9191;
+          color: #ffff;
+          border-radius: 60%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .price{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #showcase:before {
+          content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background:rgb(0, 2, 3);
+        opacity: .6; 
+        
+      }
+      .coupon{
+        background: #701e36;
+        width: 100%;
+        margin: 5px auto;
+        color: #e9f0ef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      padding: 20px;
+   
+      }
+      .coupon h1{
+        font-family: 'Franklin Gothic Medium';
+        font-weight: 700;
+      }
+      .coupon .form-control{
+        width: 100%;
+        color: #9ff1e4 !important;
+      }
+      .coupon .btn{
+        background: #022727;
+      }
+      .coupon .btn:hover{
+        background: #212144;
+      }
+      .connect{
+        display: flex;
+        flex-direction: column;
+        background: #f3f4f5;
+        opacity: 0.6;
+        box-shadow: -2px 4px 5px 5px rgb(196, 160, 169);
+padding: 10px;
+      }
+      .connect a{
+        text-decoration: none;
+        font-size: 15px;
+        color: #070808;
+        font-weight: 800;
+      }
+      .connect ul li{
+        display: block;
+      }
+      .connect svg{
+        width: 30px;
+        height: 20px;
+        background: #ccd6d6;
+      margin: 5px;
+      }
+     .contactForm{
+       background: #f3f4f5;
+       opacity: 0.6;
+       box-shadow: -2px 4px 5px rgb(196, 160, 169);
+ 
+     }
+     .contactForm h2{
+       color: #000505;
+   font-family: Impact;
+       font-weight: 400;
+      
+     }
+   .form-control{
+   border-radius: 0;
+   padding: 20px !important;
+   color: #010f0f !important;
+   font-size: 15px;
+   font-family: courier;
+   }
+   .btn{
+     background: #ca6262;
+     width: 100%;
+     padding: 10px;
+     text-transform: uppercase;
+     font-weight: 800;
+     border: none;
+   }
+   .btn:hover{
+     background: #070808;
+   }
+        #showcase h1{
+          font-size:50px;
+          line-height:1.2;
+        }
+        
+        #showcase p{
+          font-size:20px;
+        }
+        
+        #showcase .button{
+          font-size:18px;
+          text-decoration:none;
+          color:#e7e3df;
+          border:#27201a 1px solid;
+          padding:10px 20px;
+          border-radius:10px;
+          margin-top:20px;
+          background: #b40a0a;
+      
+        }
+        
+        #showcase .button:hover{
+          background:#c51e3a;
+          color:rgb(241, 233, 233);
+     
+  
+        }
+        
+        #section-a{
+          padding:20px;
+          background:#df4c4c;
+          color:rgb(22, 21, 21);
+          text-align:center;
+        }
+        
+    
+        #section-c .box-1, #section-c .box-3{
+          background:#926239;
+          color:#fff;
+        }
+        
+        #section-c .box-2{
+          background:#f9f9f9;
+        }
+        .services{
+          color: #141212;
+        
+          
+        }
+        .gallery img{
+padding: 10px;
+         height: 250px;
+         box-shadow: -5px 4px 8px 0 rgba(44, 40, 40, 0.2), 0 6px 20px 0 rgba(196, 163, 163, 0.19);
+
+        }
+        .gallery img:hover{
+          transform: scale(.5);
+          transition: .5s;
+          overflow: hidden !important;
+        }
+        @media(max-width:548px){
+          .gallery{
+            display: flex !important;
+            background: #1e1e1f;
+            color: #fff;
+          }
+        }
+     
+        
+        #myBtn{
+          z-index: 100;
+          bottom: 20px;
+          right: 30px;
+          background: rgb(243, 1, 1);
+          border: none;
+          padding: 10px;
+          border-radius: 16px;
+          position: fixed;
+          outline: none;
+          font-size: 18px;
+          font-weight: 400;
+      
+        }
+        #loader {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          z-index: 1;
+          width: 150px;
+          height: 150px;
+          margin: -75px 0 0 -75px;
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #3498db;
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+        
+        #myDiv {
+          display: none;
+          text-align: center;
+        }
+      
+        .parallax {
+          /* The image used */
+          background-image: url("images/chipo.jpeg");
+          margin: 10px auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ecf1f3;
+          font-size: 18px;
+        
+          /* Full height */
+          height: 100vh; 
+  
+position: relative;
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        @media only screen and (max-width: 1366px) {
+          .parallax {
+            background-attachment: scroll;
+          }
+        }
+        #myBtn:hover{
+          background: #0c08e9;
+        }
+        .whyUs{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+           }
+        .whyUs h2{
+         text-transform: capitalize;
+         color: #010a0a;
+         font-family: sans-serif;
+         font-weight: bold;
+       
+        }
+      .whyUs p{
+        font-size: 18px;
+        width: 100%;
+        color: #0c0101;
+        word-spacing: 1.4;
+      }
+        .services h2{
+          text-transform: uppercase;
+        color: #532424;
+        font-family: Impact;
+        text-decoration: underline;
+        }
+       
+     .mainFooter{
+       background: #070808;
+       color: #ffffff;
+       padding: 15px;
+       width: 100%;
+       margin: 0 auto;
+       margin-top: 10px;
+     }
+     @media(max-width: 768px){
+       .card{
+         margin:5px auto;
+         background-color: #e7e3df;
+       }
+       .services{
+         background-color: #e7e3df;
+       }
+     }
